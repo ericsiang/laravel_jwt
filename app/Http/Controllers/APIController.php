@@ -10,7 +10,6 @@ use App\Http\Requests\RegistrationFormRequest;
 
 class APIController extends Controller
 {
-   
       /**
      * @var bool
      */
@@ -44,8 +43,7 @@ class APIController extends Controller
      * @throws \Illuminate\Validation\ValidationException
      */
     public function logout(Request $request)
-    {   
-        //dd('qwewqw');
+    {
         $this->validate($request, [
             'token' => 'required'
         ]);
